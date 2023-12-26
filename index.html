@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="responsive.css">
     <title>Caique Augusto</title>
 </head>
 <body>
@@ -14,18 +15,28 @@
                 <li><a class="link" href="#initial">inicio</a></li>
                 <li><a class="link" href="#about-section">sobre</a></li>
                 <li><a class="link" href="#projects-section">projetos</a></li>
-                <li><a class="link" href="#contact-section">contato</a></li>
+                <li><a class="link" href="#contact-section">contatos</a></li>
             </ul>
+            <button class="btn-icon"><i class="fa-solid fa-bars"></i></button>
         </nav>
         <div id="initial">
             <div class="initial-container">
                 <h1 class="main-title">Desenvolvedor Front-End</h1>
                 <address class="endereço">Santo André, São Paulo, Brasil</address>
                 <div class="initial-image-container">
-                    <a href="www.linkedin.com/in/caique-augusto-74a67129a" target="_blank"><img src="imagens/linkedin.svg" alt="linkedin"></a>
+                    <a href="https://www.linkedin.com/in/caique-augusto-74a67129a/" target="_blank" rel="external"><img src="imagens/linkedin.svg" alt="linkedin"></a>
                     <a href="https://github.com/slowdroph" target="_blank"><img src="imagens/github.svg" alt="github"></a>
                 </div>
             </div>
+        </div>
+        <div class="menu-box">
+            <button class="btn-icon btn-close"><i class="fa-solid fa-xmark"></i></button>
+            <ul>
+                <li><a href="#initial">inicio</a></li>
+                <li><a href="#about-section">sobre</a></li>
+                <li><a href="#projects-section">projetos</a></li>
+                <li><a href="#contact-section">contatos</a></li>
+            </ul>
         </div>
     </header>
 
@@ -35,11 +46,7 @@
             <h2 class="sub-title">Sobre Mim</h2>
             <p class="self-description">Olá, meu nome é <em>Caique Augusto</em>, e sou desenvolvedor front-end</p>
             <div class="tec-container">
-                <p>Lorem Ipsum is simply dummy text of the printing and 
-                    typesetting Lorem Ipsumhas been the industry's 
-                    standard dummy text ever since the 1500s, when an 
-                    unknown printer took agalley of type and scrambled
-                    it to make a type specimen book
+                <p>Sou um entusiasta front-end comprometido em aprender e evoluir constantemente. Minha jornada inclui experiência em <strong>HTML, CSS, JavaScript, Git e GitHub</strong> e estou sempre explorando novas maneiras de aprimorar minhas habilidades.
                 </p>
                 <h3>técnologias</h3>
                 <div class="tec-image-container">
@@ -57,12 +64,22 @@
         <h2 class="sub-title">Projetos</h2>
         <div class="projects-container">
             <div class="project">
-                <h3 class="project-title">WeatherApp</h3>
-                <img class="iml" src="imagens/weatherapp.png" alt="">
+                <div class="project-back">
+                    <h3 class="project-title">WeatherApp</h3>
+                    <picture>
+                        <source media="(max-width:550px )" srcset="imagens/weatherapp-230.png" >
+                        <img class="iml" src="imagens/weatherapp.png" alt="">
+                    </picture>
+                </div>
             </div>
             <div class="project">
-                <h3 class="project-title">Clínica Dentista</h3>
-                <img src="imagens/dentist.png" alt="">
+                <div class="project-back">
+                    <h3 class="project-title">Clínica Dentista</h3>
+                    <picture>
+                        <source media="(max-width:550px )" srcset="imagens/dentist-230.png">
+                        <img src="imagens/dentist.png" alt="">
+                    </picture>
+                </div>
             </div>
         </div>
         <div class="projeto project-0 project-hidden">
@@ -70,7 +87,8 @@
             <a href="https://stunning-begonia-e9ebbe.netlify.app/" target="_blank"><img src="imagens/weatherappbig.png" alt="weatherapp"></a>
             <span>
                 <h3>descrição:</h3>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting Lorem Ipsumhas </p>
+                <p class="FullText">Esta aplicação foi criada utilizando uma API que fornece a temperatura atual de uma cidade específica. Desenvolvido com HTML, CSS e JavaScript, este projeto não apenas fornece a temperatura atual, mas também altera o plano de fundo para a bandeira do país da cidade selecionada. Este é o meu primeiro projeto consumindo uma API.</p>
+                <p class="shorter">Esta aplicação desenvolvida com HTML, CSS e JavaScript utiliza uma API que fornece a temperatura atual de uma cidade específica.</p>
             </span>
             <span>
                 <h3>técnologias:</h3>
@@ -78,7 +96,7 @@
             </span>
             <span>
                 <h3>links:</h3>
-                <p class="link-container"><a href="https://stunning-begonia-e9ebbe.netlify.app/" target="_blank">Projeto <img src="imagens/page.svg" alt="projeto"></a> / <a href="https://github.com/slowdroph/WeatherApp" target="_blank">Código <img src="imagens/github.svg" alt="código"></a> / <a href="https://www.figma.com/file/ACtKNXM2lZPNON4zELMSXj/weather-app?type=design&node-id=0%3A1&mode=design&t=dplXVKRMWS0fWv0f-1" target="_blank">Design <img src="imagens/figma.svg" alt="design"></a></p>
+                <p class="link-container"><a href="https://stunning-begonia-e9ebbe.netlify.app/" target="_blank">Projeto <img src="imagens/page.svg" alt="projeto"></a>  <a href="https://github.com/slowdroph/WeatherApp" target="_blank">Código <img src="imagens/github.svg" alt="código"></a>  <a href="https://www.figma.com/file/ACtKNXM2lZPNON4zELMSXj/weather-app?type=design&node-id=0%3A1&mode=design&t=dplXVKRMWS0fWv0f-1" target="_blank">Design <img src="imagens/figma.svg" alt="design"></a></p>
             </span>
             <button class="close-btn"><i class="fa-solid fa-x"></i></button>
         </div>
@@ -87,7 +105,7 @@
             <a href="https://deluxe-scone-1a3cc8.netlify.app/" target="_blank"><img src="imagens/dentistbig.png" alt="clínica"></a>
             <span>
                 <h3>descrição:</h3>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting Lorem Ipsumhas </p>
+                <p class="SingleText">Uma simples landing page de uma clínica odontológica fictícia foi desenvolvida com HTML, CSS e JavaScript.</p>
             </span>
             <span>
                 <h3>técnologias:</h3>
@@ -95,7 +113,7 @@
             </span>
             <span>
                 <h3>links:</h3>
-                <p class="link-container"><a href="https://deluxe-scone-1a3cc8.netlify.app/" target="_blank">Projeto <img src="imagens/page.svg" alt="projeto"></a> / <a href="https://github.com/slowdroph/Dental-Company" target="_blank">Código <img src="imagens/github.svg" alt="código"></a> / <a href="https://www.figma.com/file/pypm64okISEl3irjlPBQIW/dentista-consult%C3%B3rio?type=design&node-id=0%3A1&mode=design&t=d8czL5d8Dkrqp7yA-1" target="_blank">Design <img src="imagens/figma.svg" alt="design"></a></p>
+                <p class="link-container"><a href="https://deluxe-scone-1a3cc8.netlify.app/" target="_blank">Projeto <img src="imagens/page.svg" alt="projeto"></a>  <a href="https://github.com/slowdroph/Dental-Company" target="_blank">Código <img src="imagens/github.svg" alt="código"></a>  <a href="https://www.figma.com/file/pypm64okISEl3irjlPBQIW/dentista-consult%C3%B3rio?type=design&node-id=0%3A1&mode=design&t=d8czL5d8Dkrqp7yA-1" target="_blank">Design <img src="imagens/figma.svg" alt="design"></a></p>
             </span>
             <button class="close-btn"><i class="fa-solid fa-x"></i></button>
         </div>
@@ -105,18 +123,18 @@
     <section  class="section  section-hidden" id="contact-section">
         <h2 class="sub-title">Contatos</h2>
         <div class="contact-container">
-            <div class="contact">
+            <a class="contact" target="_blank" href="https://wa.me/5511960661995">
                 <img src="imagens/whatsapp.svg" alt="WhatsApp">
-                <a class="link" href="https://wa.me/5511960661995" target="_blank">whatsApp</a>
-            </div>
-            <div class="contact">
+                <span class="link">whatsApp</span>
+            </a>
+            <a class="contact" target="_blank" href="https://www.linkedin.com/in/caique-augusto-74a67129a/">
                 <img src="imagens/linkedin.svg" alt="Linkedin">
-                <a class="link" href="www.linkedin.com/in/caique-augusto-74a67129a" target="_blank">linkedin</a>
-            </div>
-            <div class="contact">
+                <span class="link">linkedin</span>
+            </a>
+            <a class="contact" target="_blank" href="mailto:caiqueestrela538@gmail.com">
                 <img src="imagens/email.svg" alt="Email">
-                <a class="link" href="mailto:caiqueestrela538@gmail.com" target="_self">email</a>
-            </div>
+                <span class="link">email</span>
+            </a>
         </div>
     </section>
 

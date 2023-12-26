@@ -4,7 +4,7 @@ const about = document.querySelector(".about-section");
 const navigation = document.querySelector("nav");
 const header = document.querySelector("#initial");
 
-const Callback = function (entries, observer) {
+const Callback = function (entries) {
     const [entry] = entries;
     console.log(entry);
 
@@ -25,7 +25,7 @@ observer.observe(header);
 
 const sections = document.querySelectorAll(".section");
 
-const AllSections = function (sec, obs) {
+const AllSections = function (sec) {
     const [allsec] = sec;
 
     if (!allsec.isIntersecting) return;
@@ -50,9 +50,9 @@ const overlay = document.querySelector(".overlay");
 const body = document.querySelector("body");
 
 modals.forEach(function (g, t) {
-    const todos = document.querySelector(`.project-${t}`);
+    const AllProjects = document.querySelector(`.project-${t}`);
     g.addEventListener("click", function () {
-        todos.classList.remove("project-hidden");
+        AllProjects.classList.remove("project-hidden");
         overlay.classList.remove("project-hidden");
     });
 });
@@ -71,3 +71,25 @@ function fechar() {
     });
     overlay.classList.add("project-hidden");
 }
+
+const BtnIcon = document.querySelector(".btn-icon");
+const BtnClose = document.querySelector(".btn-close");
+const MenuBox = document.querySelector(".menu-box");
+const MenuLinks = document.querySelectorAll(".menu-box ul li a");
+
+function AbrirMenu() {
+    MenuBox.classList.add("topHidden");
+    overlay.classList.remove("project-hidden");
+}
+
+function FecharMenu() {
+    MenuBox.classList.remove("topHidden");
+    overlay.classList.add("project-hidden");
+}
+
+BtnIcon.addEventListener("click", AbrirMenu);
+BtnClose.addEventListener("click", FecharMenu);
+overlay.addEventListener("click", FecharMenu);
+MenuLinks.forEach(function (e) {
+    e.addEventListener("click", FecharMenu);
+});

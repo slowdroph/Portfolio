@@ -338,6 +338,7 @@ strong {
 .projects-container {
     display: grid;
     grid-template-columns: 480px 480px;
+    grid-template-rows: 400px 500px;
     align-items: center;
     justify-content: space-around;
     background-color: var(--LightGray);
@@ -514,7 +515,8 @@ strong {
     display: inline-block;
 }
 
-.FullText, .SingleText {
+.FullText,
+.SingleText {
     display: inline;
 }
 
@@ -531,6 +533,12 @@ strong {
 /* .projeto span:nth-child(3) p {
     display: inline;
 } */
+
+.quote {
+    text-decoration: none;
+    color: #20c997;
+    font-style: normal;
+}
 
 .link-container a {
     color: black;
@@ -559,6 +567,10 @@ strong {
 
 .link-container a::after {
     content: "/";
+}
+
+.link-container .hiddenbar::after {
+    content: "";
 }
 
 .link-container a:nth-child(3)::after {

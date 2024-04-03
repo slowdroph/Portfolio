@@ -6,7 +6,6 @@ const header = document.querySelector("#initial");
 
 const Callback = function (entries) {
     const [entry] = entries;
-    console.log(entry);
 
     if (!entry.isIntersecting) {
         navigation.classList.add("sticky");

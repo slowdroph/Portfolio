@@ -283,6 +283,9 @@
     .projeto {
         top: 6%;
     }
+    .projeto > a > img {
+        display: none;
+    }
 }
 
 @media screen and (max-height: 700px) {

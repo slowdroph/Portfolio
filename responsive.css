@@ -14,10 +14,6 @@
         height: 750px;
     }
 
-    #projects-section {
-        margin-top: 20px;
-    }
-
     #contact-section {
         height: 600px;
     }
@@ -32,6 +28,15 @@
 @media screen and (max-width: 720px) {
     .tec-container {
         width: 450px;
+    }
+
+    #about-section {
+        height: fit-content;
+        margin-top: 5em;
+    }
+
+    #projects-section {
+        margin-top: 5em;
     }
 
     .about-container {
@@ -53,10 +58,6 @@
 
     .tec-container {
         max-width: 310px;
-    }
-
-    #about-section {
-        height: 900px;
     }
 }
 

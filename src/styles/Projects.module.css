@@ -1,0 +1,148 @@
+.projects_section {
+    height: fit-content;
+    padding-top: 12em;
+}
+
+.popUp_button {
+    background-color: var(--HardGreen);
+    border: 1px solid #0000;
+    border-radius: 0 0 0 100%;
+    box-shadow: 0 0 5px 3px #00000014;
+    height: 45px;
+    margin-left: auto;
+    padding: 0;
+    right: 0;
+    width: 45px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.popUp_button svg {
+    stroke-width: 4px;
+    color: white;
+    position: relative;
+    right: -3px;
+    top: -1px;
+    transition: all 0.4s ease 0s;
+}
+
+.list_container {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+    max-width: 1000px;
+    margin: 5rem auto 0px auto;
+}
+
+.card_container {
+    width: 255px;
+    height: 450px;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+    opacity: 0.9;
+    padding: 1.25rem;
+    transition: all 0.5s ease 0s;
+    box-shadow: 0 4px 5px 3px #20c99657;
+}
+
+.card_container:hover {
+    transform: scale(1.02);
+    overflow: hidden;
+    box-shadow: 0 4px 4px 5px #0beaa785;
+}
+
+.card_image {
+    width: 100%;
+    height: 170px;
+    cursor: pointer;
+}
+
+.card_name {
+    font-size: 1.25rem;
+    text-align: center;
+    font-family: var(--FontRaleway), Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.card_description {
+    font-family: var(--FontRaleway), Arial, Helvetica, sans-serif;
+    line-height: 24px;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.popUp_container {
+    width: 608px;
+    z-index: 10;
+    position: fixed;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    padding-bottom: 20px;
+    border-radius: 5px;
+}
+
+.popUp_image {
+    width: 100%;
+}
+
+.tags_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px auto 0px auto;
+    max-width: 400px;
+}
+
+.tags_container span {
+    background-color: #0d271f57;
+    border: 1px solid #0000;
+    border-radius: 50px;
+    color: white;
+    display: inline-block;
+    font-size: 80%;
+    font-weight: 600;
+    margin: 0 4px 8px;
+    padding: 2px 10px;
+    font-family: var(--FontRaleway), Arial, Helvetica, sans-serif;
+}
+
+.link {
+    background-color: var(--HardGreen);
+    border-radius: 0.25rem;
+    font-weight: 400;
+    width: 150px;
+    text-align: center;
+    display: block;
+    margin: 20px auto 0px auto;
+    padding: 10px 10px;
+    color: white;
+    text-decoration: none;
+    font-family: var(--FontRaleway), Arial, Helvetica, sans-serif;
+}
+
+.link svg {
+    transform: translate(-7px, 3px);
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    top: 0;
+    bottom: 0;
+    position: fixed;
+    backdrop-filter: blur(2px);
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+@media screen and (max-width: 650px) {
+    .popUp_container {
+        max-width: 90%;
+    }
+}

@@ -1,0 +1,73 @@
+@font-face {
+    font-family: Raleway;
+    src: url(/fonts/Raleway-VariableFont_wght.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--HardGreen);
+    border-radius: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background: gray;
+}
+
+#root {
+    background-image: var(--bg-layout-home);
+    height: 100%;
+}
+
+.firstTitle {
+    font-size: 2.6rem;
+    text-align: center;
+    font-weight: 400;
+    font-family: var(--FontRaleway), Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    color: var(--HardGreen);
+}
+
+.subTitle {
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    font-family: var(--FontRaleway);
+    text-transform: capitalize;
+}
+
+.text {
+    font-family: var(--FontRaleway), Arial, Helvetica, sans-serif;
+    font-size: 21px;
+}
+
+:root {
+    --FontRaleway: Raleway;
+    --txt: black;
+    --HardGreen: #20c997;
+    --bg-layout-home: linear-gradient(307deg, #0000, #0000 57%, #fff 0, #f8f8f8),
+        linear-gradient(180deg, #fff 0%, #f8f8f8);
+}
+
+strong {
+    font-style: italic;
+    color: var(--HardGreen);
+}
+
+
+@media screen and (max-width:730px) {
+    .firstTitle {
+        font-size: 1.8rem;
+    }
+    .text {
+        font-size: 18px;
+    }
+}

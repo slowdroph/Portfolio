@@ -1,0 +1,29 @@
+.introduciton_section {
+    height: fit-content;
+    margin-top: 18em;
+}
+
+.introduction_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.paragraph_container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+@media screen and (max-width: 780px) {
+    .paragraph_container {
+        padding: 0px 20px;
+    }
+    .introduciton_section {
+        margin-top: 10em;
+    }
+}

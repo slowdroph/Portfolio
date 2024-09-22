@@ -1,0 +1,35 @@
+.section_skills {
+    height: fit-content;
+    margin-top: 10em;
+}
+
+.list_container {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 40px auto 0px auto;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.list_skill {
+    border: 1.7px solid var(--HardGreen);
+    border-radius: 5px;
+    box-shadow: 4px 5px 4px 3px #20c99657;
+    font-size: 4rem;
+    line-height: 0;
+    opacity: 0.93;
+    overflow: hidden;
+    padding: 2rem 4rem;
+    transition: all 0.4s ease 0s;
+}
+
+.list_skill:hover {
+    border: 2.2px solid var(--HardGreen);
+    overflow: hidden;
+    transform: scale(1.05);
+}

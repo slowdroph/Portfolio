@@ -1,0 +1,44 @@
+.mobileNav {
+    background: #fafafa;
+    box-shadow: 0 0 25px #0000000d;
+    height: 100vh;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 70%;
+    z-index: 20;
+}
+
+.mobileList {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 40px;
+}
+
+.mobileList li a {
+    text-decoration: none;
+    font-family: var(--FontRaleway), Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    color: var(--txt);
+    transition: all 0.35s ease-out 0s;
+}
+
+.mobileList li a svg {
+    margin-right: 5px;
+    transform: translateY(2px);
+}
+
+.overlayM {
+    width: 100%;
+    height: 100%;
+    z-index: 15;
+    top: 0;
+    bottom: 0;
+    position: fixed;
+    backdrop-filter: blur(2px);
+    background-color: rgba(0, 0, 0, 0.6);
+}

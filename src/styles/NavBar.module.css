@@ -1,0 +1,99 @@
+.nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 0px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 4;
+}
+
+.navScroll {
+    backdrop-filter: blur(15px);
+    background-color: #0000;
+    box-shadow: 0 10px 10px 0 rgba(9, 5, 29, 0.173);
+    outline: 0 dashed #212529;
+}
+
+.list_container {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 40px;
+}
+
+.list_container li a {
+    text-decoration: none;
+    font-family: var(--FontRaleway), Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    color: var(--txt);
+    transition: all 0.35s ease-out 0s;
+}
+
+.list_container li a:hover::after {
+    max-width: 100%;
+}
+
+.list_container li a::after {
+    background: var(--HardGreen);
+    border-radius: 16px;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 5px;
+    max-width: 0;
+    left: 0;
+    position: relative;
+    transition: all 0.35s ease-out 0s;
+    z-index: 10;
+}
+
+.activeLink::after {
+    background: var(--HardGreen);
+    border-radius: 16px;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 5px;
+    max-width: 100% !important;
+    left: 0;
+    position: relative;
+    transition: all 0.35s ease-out 0s;
+    z-index: 10;
+}
+
+.list_container li a svg {
+    margin-right: 5px;
+    transform: translateY(2px);
+}
+
+.burgerBtn {
+    background: #0000;
+    border: none;
+    cursor: pointer;
+    display: none;
+    flex-direction: column;
+}
+
+.burgerBtn span {
+    background-color: var(--HardGreen);
+    display: block;
+    height: 4px;
+    margin-bottom: 4.5px;
+    margin-top: 4.5px;
+    opacity: 1;
+    transform: rotate(0deg);
+    width: 29px;
+}
+
+@media screen and (max-width: 700px) {
+    .list_container {
+        display: none;
+    }
+
+    .burgerBtn {
+        display: block;
+    }
+}

@@ -1,0 +1,19 @@
+.personal_container {
+    height: fit-content;
+    max-width: 700px;
+    margin: 0px auto;
+    padding-top: 12em;
+}
+
+.paragraph_container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+@media screen and (max-width: 765px) {
+    .paragraph_container {
+        padding: 0px 30px;
+    }
+}

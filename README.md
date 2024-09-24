@@ -1,8 +1,23 @@
-# React + Vite
+<h2 align="left">🌟 Portfólio</h2>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+###
 
-Currently, two official plugins are available:
+<p align="left">Bem-vindo ao meu portfólio! Este projeto foi criado para apresentar alguns dos meus trabalhos e habilidades como desenvolvedor.</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+###
+
+<h2 align="left">🚀 Tecnologias Utilizadas</h2>
+
+###
+
+<p align="left">React.js - Biblioteca JavaScript para criar interfaces de usuário.<br><br>CSS3 - Utilizado para a estilização do site.</p>
+
+###
+
+<h2 align="left">🌍 Funcionalidades</h2>
+
+###
+
+<p align="left">- Exibição de projetos com detalhes sobre cada um.<br>- Links diretos para repositórios e deploys dos projetos.<br>- Layout responsivo para diferentes dispositivos.</p>
+
+###
